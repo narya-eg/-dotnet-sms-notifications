@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.6.33723.286
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Narya.Sms.Core", "Narya.Sms.Core\Narya.Sms.Core.csproj", "{314FB01A-FF10-4F68-B9FA-1C1B8C2DAC2C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Narya.Sms.Twillio", "Narya.Sms.Twillio\Narya.Sms.Twillio.csproj", "{E25A71DF-96F4-4AEE-924C-666FEA528919}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{314FB01A-FF10-4F68-B9FA-1C1B8C2DAC2C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{314FB01A-FF10-4F68-B9FA-1C1B8C2DAC2C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{314FB01A-FF10-4F68-B9FA-1C1B8C2DAC2C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{314FB01A-FF10-4F68-B9FA-1C1B8C2DAC2C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E25A71DF-96F4-4AEE-924C-666FEA528919}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E25A71DF-96F4-4AEE-924C-666FEA528919}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E25A71DF-96F4-4AEE-924C-666FEA528919}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E25A71DF-96F4-4AEE-924C-666FEA528919}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {ABB30116-453F-4B2B-BCD2-BBF49E45CB22}
+	EndGlobalSection
+EndGlobal

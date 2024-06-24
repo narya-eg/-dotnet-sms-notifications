@@ -19,17 +19,23 @@ public class SmsService : ISmsService
         _configuration = configuration;
     }
 
-    public async Task Send(SmsModel options)
+    public async Task<Result> Send(SmsModel options)
     {
-        _twilioConfig = _configuration.GetTwilioConfig();
+        var result = _configuration.GetTwilioConfig();
+        if (result.IsFailure) return Result.Failure(result.Errors);
+        _twilioConfig = result.Value;
         await SendSms(options);
+        return Result.Success();
     }
 
-    public async Task Send(SmsModel options, dynamic configuration)
+    public async Task<Result> Send(SmsModel options, dynamic configuration)
     {
-        if (configuration is not object) throw new Exception("Twilio configuration is not a valid configurations.");
-        _twilioConfig = ModelExtension.ConvertTo<TwilioConfig>(configuration);
+        if (configuration is not object) return Result.Failure("Twilio configuration is not a valid configurations.");
+        Result<TwilioConfig> result = ModelExtension.ConvertTo<TwilioConfig>(configuration);
+        if (result.IsFailure) return Result.Failure(result.Errors);
+        _twilioConfig = result.Value;
         await SendSms(options);
+        return Result.Success();
     }
 
     private async Task SendSms(SmsModel options)

@@ -1,12 +1,12 @@
 namespace Narya.Sms.Core.Models;
 
-public sealed class SmsPlaceholderModel
+public sealed class SmsPlaceholder
 {
-    private SmsPlaceholderModel()
+    private SmsPlaceholder()
     {
     }
 
-    public SmsPlaceholderModel(string placeholder, string value)
+    public SmsPlaceholder(string placeholder, string value)
     {
         Placeholder = placeholder;
         Value = value;

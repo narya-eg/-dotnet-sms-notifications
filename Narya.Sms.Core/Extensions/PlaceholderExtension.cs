@@ -4,7 +4,7 @@ namespace Narya.Sms.Core.Extensions;
 
 internal static class PlaceholderExtension
 {
-    public static string ReplacePlaceholders(this string text, List<SmsPlaceholderModel> placeholders)
+    public static string ReplacePlaceholders(this string text, List<SmsPlaceholder> placeholders)
     {
         foreach (var item in placeholders)
         {

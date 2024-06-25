@@ -10,12 +10,12 @@ The Generic SMS Sender package provides a flexible and easy-to-use solution for 
 - **Extensible**: Easily extend and customize the package to support additional SMS providers.
 - **Reliable**: Ensure your SMS messages are sent reliably with robust error handling and retry mechanisms.
 
-## Getting Started
+SMS NuGet Packages
+---------------------------
 
-### Installation
-
-Install the package via NuGet:
-
-```sh
-Install-Package Narya.Sms.Core
-Install-Package Narya.Sms.Twilio
+| Package Name                                                    |   .NET   | .NET Standard | .NET Framework |
+|-----------------------------------------------------------------|:--------:|:-------------:|:--------------:|
+| **Main**                                                        
+| [Narya.Sms.Core]()                                              |          |      2.1      |                |
+| **Supported Providers**                                         
+| [Narya.Sms.Twilio]()                                            |   7.0    |               |                |

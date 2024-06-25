@@ -11,7 +11,7 @@ public static class ConfigurationExtension
     {
         var config = configuration.GetSection("Twilio").Get<TwilioConfig>();
         if (config is null) return Result<TwilioConfig>.Failure("Missing 'Twilio' configuration section from the appsettings.");
-        if (config.ValidateObject(config, out List<ValidationResult> results)) return Result<TwilioConfig>.Failure(results.Select(x => x.ErrorMessage ?? "").ToList());
+        if (config.ValidateObject(config, out List<ValidationResult> results) is false) return Result<TwilioConfig>.Failure(results.Select(x => x.ErrorMessage ?? "").ToList());
         return Result<TwilioConfig>.Success(config);
     }
 }

@@ -43,7 +43,7 @@ public class SmsService : ISmsService
         TwilioClient.Init(_twilioConfig.AccountSID, _twilioConfig.AuthToken);
 
         var messageResource = await MessageResource.CreateAsync(
-            new PhoneNumber(options.To),
+            new PhoneNumber(string.Join(",", options.To)),
             from: new PhoneNumber(_twilioConfig.From),
             body: options.Message);
     }

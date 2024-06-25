@@ -8,7 +8,8 @@ namespace Narya.Sms.Core.Extensions
         {
             string pattern = @"^\+?(\d[\d-. ]+)?(\([\d-. ]+\))?[\d-. ]+\d$";
             Regex regex = new Regex(pattern);
-            return regex.IsMatch(phoneNumber);
+            string numericPhoneNumber = Regex.Replace(phoneNumber, @"[^\d]", "");
+            return regex.IsMatch(phoneNumber) && numericPhoneNumber.Length >= 10 && numericPhoneNumber.Length <= 15;
         }
     }
 }

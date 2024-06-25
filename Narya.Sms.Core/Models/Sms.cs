@@ -2,21 +2,27 @@
 
 namespace Narya.Sms.Core.Models;
 
-public class SmsModel
+public class Sms
 {
-    private SmsModel(string to, string message)
+    private Sms() { }
+    private Sms(ICollection<string> to, string message)
     {
         To = to;
         Message = message;
     }
 
-    public string To { get; private set; } // Phone numbers comma seperated
+    public ICollection<string> To { get; private set; } = new List<string>();
     public string Message { get; private set; }
 
-    public static Result<SmsModel> Create(string to, string message)
+    public static Result<Sms> Create(string message, params string[] to)
     {
-        if (to.IsValidPhoneNumber() is false)
-            return Result<SmsModel>.Failure("Invalid Phone Number.");
-        return Result<SmsModel>.Success(new SmsModel(to, message));
+        foreach (var number in to)
+        {
+            if (number.IsValidPhoneNumber() is false)
+                return Result<Sms>.Failure($"Invalid Phone Number {number}.");
+        }
+        Sms sms = new Sms(to, message);
+        return Result<Sms>.Success(sms);
     }
+
 }

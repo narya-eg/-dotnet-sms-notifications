@@ -1,6 +1,7 @@
 using Microsoft.AspNetCore.Mvc;
 using Narya.Sms.Core.Interfaces;
 using Narya.Sms.Core.Models;
+using TestSuite.Models;
 
 namespace TestSuite.Controllers;
 
@@ -18,9 +19,11 @@ public class SmsController : ControllerBase
     }
 
     [HttpPost("twilio")]
-    public async Task<IActionResult> SendUsingTwilio([FromBody] Sms options)
+    public async Task<IActionResult> SendUsingTwilio([FromBody] SmsModel options)
     {
-        var result = await _smsService.Send(options);
+        var smsResult = Sms.Create(options.Message, options.To.ToArray());
+        if (smsResult.IsFailure) return BadRequest(smsResult.Errors);
+        var result = await _smsService.Send(smsResult.Value);
         if (result.IsFailure) return BadRequest(result.Errors);
         return Ok();
     }

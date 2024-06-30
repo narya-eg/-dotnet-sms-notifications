@@ -21,7 +21,7 @@ public class SmsController : ControllerBase
     [HttpPost("twilio")]
     public async Task<IActionResult> SendUsingTwilio([FromBody] SmsModel options)
     {
-        var smsResult = Sms.Create(options.Message, options.To.ToArray());
+        var smsResult = SmsOptions.Create(options.Message, options.To.ToArray());
         if (smsResult.IsFailure) return BadRequest(smsResult.Errors);
         var result = await _smsService.Send(smsResult.Value);
         if (result.IsFailure) return BadRequest(result.Errors);

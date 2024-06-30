@@ -4,6 +4,6 @@ namespace Narya.Sms.Core.Interfaces;
 
 public interface ISmsService
 {
-    Task Send(SmsModel options);
-    Task Send(SmsModel options, dynamic configuration);
+    Task<Result> Send(Models.Sms options);
+    Task<Result> Send(Models.Sms options, dynamic configuration);
 }

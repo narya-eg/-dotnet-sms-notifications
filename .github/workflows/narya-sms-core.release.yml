@@ -15,16 +15,16 @@ jobs:
         uses: actions/setup-dotnet@v3
 
       - name: Restore dependencies
-        run: dotnet restore ./Narya.Sms.Core/
+        run: dotnet restore ./src/Narya.Sms.Core/
 
       - name: Build
-        run: dotnet build ./Narya.Sms.Core/ --no-restore --configuration Release
+        run: dotnet build ./src/Narya.Sms.Core/ --no-restore --configuration Release
 
       - name: Test
-        run: dotnet test ./Narya.Sms.Core/ --no-restore --verbosity normal
+        run: dotnet test ./tests/Narya.Sms.Core.UnitTests/ --no-restore --verbosity normal
 
       - name: Pack NuGet package
-        run: dotnet pack ./Narya.Sms.Core/ --no-build --no-restore --configuration Release --output core
+        run: dotnet pack ./src/Narya.Sms.Core/ --no-build --no-restore --configuration Release --output core
 
       - name: Publish NuGet package
         env:

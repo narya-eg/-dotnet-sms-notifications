@@ -15,16 +15,16 @@ jobs:
         uses: actions/setup-dotnet@v3
 
       - name: Restore dependencies
-        run: dotnet restore ./Narya.Sms.Twilio/
+        run: dotnet restore ./src/Narya.Sms.Twilio/
 
       - name: Build
-        run: dotnet build ./Narya.Sms.Twilio/ --no-restore --configuration Release
+        run: dotnet build ./src/Narya.Sms.Twilio/ --no-restore --configuration Release
 
       - name: Test
-        run: dotnet test ./Narya.Sms.Twilio/ --no-restore --verbosity normal
+        run: dotnet test ./tests/Narya.Sms.Twilio.UnitTests/ --no-restore --verbosity normal
 
       - name: Pack NuGet package
-        run: dotnet pack ./Narya.Sms.Twilio/ --no-build --no-restore --configuration Release --output sendgrid
+        run: dotnet pack ./src/Narya.Sms.Twilio/ --no-build --no-restore --configuration Release --output sendgrid
 
       - name: Publish NuGet package
         env:

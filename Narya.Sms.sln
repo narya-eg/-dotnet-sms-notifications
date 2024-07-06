@@ -9,13 +9,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "tests", "tests", "{1494BD64
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narya.Sms.Core", "src\Narya.Sms.Core\Narya.Sms.Core.csproj", "{8F8A7B6F-5836-4F81-A0F7-0AEE1A3F987C}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narya.Sms.Twilio", "src\Narya.Sms.Twillio\Narya.Sms.Twilio.csproj", "{E10A16E3-1E66-4551-9EE7-B25D927BEDF9}"
-EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSuite", "src\TestSuite\TestSuite.csproj", "{38040470-7902-47FC-A8FB-3BFAE45E6A31}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narya.Sms.Core.UnitTests", "tests\Narya.Sms.Core.UnitTests\Narya.Sms.Core.UnitTests.csproj", "{7521779D-EBA6-4CDB-A829-EB1F4EB69912}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Narya.Sms.Twilio.UnitTests", "tests\Narya.Sms.Twilio.UnitTests\Narya.Sms.Twilio.UnitTests.csproj", "{BBF9C9A5-F44A-4A5F-8838-B8233A9FDC57}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narya.Sms.Twilio", "src\Narya.Sms.Twilio\Narya.Sms.Twilio.csproj", "{DF2D7146-88B7-465F-A92B-60CC0A5B4054}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,10 +27,6 @@ Global
 		{8F8A7B6F-5836-4F81-A0F7-0AEE1A3F987C}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8F8A7B6F-5836-4F81-A0F7-0AEE1A3F987C}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8F8A7B6F-5836-4F81-A0F7-0AEE1A3F987C}.Release|Any CPU.Build.0 = Release|Any CPU
-		{E10A16E3-1E66-4551-9EE7-B25D927BEDF9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{E10A16E3-1E66-4551-9EE7-B25D927BEDF9}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{E10A16E3-1E66-4551-9EE7-B25D927BEDF9}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{E10A16E3-1E66-4551-9EE7-B25D927BEDF9}.Release|Any CPU.Build.0 = Release|Any CPU
 		{38040470-7902-47FC-A8FB-3BFAE45E6A31}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{38040470-7902-47FC-A8FB-3BFAE45E6A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38040470-7902-47FC-A8FB-3BFAE45E6A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -43,16 +39,20 @@ Global
 		{BBF9C9A5-F44A-4A5F-8838-B8233A9FDC57}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BBF9C9A5-F44A-4A5F-8838-B8233A9FDC57}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BBF9C9A5-F44A-4A5F-8838-B8233A9FDC57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF2D7146-88B7-465F-A92B-60CC0A5B4054}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF2D7146-88B7-465F-A92B-60CC0A5B4054}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF2D7146-88B7-465F-A92B-60CC0A5B4054}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DF2D7146-88B7-465F-A92B-60CC0A5B4054}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(NestedProjects) = preSolution
 		{8F8A7B6F-5836-4F81-A0F7-0AEE1A3F987C} = {ACAD467F-7E52-4B18-93D1-9086C631166B}
-		{E10A16E3-1E66-4551-9EE7-B25D927BEDF9} = {ACAD467F-7E52-4B18-93D1-9086C631166B}
 		{38040470-7902-47FC-A8FB-3BFAE45E6A31} = {ACAD467F-7E52-4B18-93D1-9086C631166B}
 		{7521779D-EBA6-4CDB-A829-EB1F4EB69912} = {1494BD64-637A-44D3-B616-A9A8A2E95A83}
 		{BBF9C9A5-F44A-4A5F-8838-B8233A9FDC57} = {1494BD64-637A-44D3-B616-A9A8A2E95A83}
+		{DF2D7146-88B7-465F-A92B-60CC0A5B4054} = {ACAD467F-7E52-4B18-93D1-9086C631166B}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ABB30116-453F-4B2B-BCD2-BBF49E45CB22}

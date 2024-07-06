@@ -24,12 +24,12 @@ jobs:
         run: dotnet test ./tests/Narya.Sms.Twilio.UnitTests/ --no-restore --verbosity normal
 
       - name: Pack NuGet package
-        run: dotnet pack ./src/Narya.Sms.Twilio/ --no-build --no-restore --configuration Release --output sendgrid
+        run: dotnet pack ./src/Narya.Sms.Twilio/ --no-build --no-restore --configuration Release --output twilio
 
       - name: Publish NuGet package
         env:
           NUGET_API_KEY: ${{ secrets.NUGET_API_KEY }}
         run:  |
-            cd core
+            cd twilio
             PACKAGE=$(find . -name "*.nupkg" | head -n 1)    
             dotnet nuget push "$PACKAGE" -k $NUGET_API_KEY -s https://api.nuget.org/v3/index.json

@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Narya.Sms.Twillio\Narya.Sms.Twilio.csproj" />
+    <ProjectReference Include="..\Narya.Sms.Twilio\Narya.Sms.Twilio.csproj" />
   </ItemGroup>
 
 </Project>

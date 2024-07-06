@@ -1,7 +1,7 @@
 using Narya.Sms.Core.Models;
 using static System.Runtime.InteropServices.JavaScript.JSType;
 
-namespace Narya.Email.Core.UnitTests
+namespace Narya.Sms.Core.UnitTests
 {
     public class SmsTests
     {

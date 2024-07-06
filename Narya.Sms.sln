@@ -15,6 +15,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSuite", "src\TestSuite\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narya.Sms.Core.UnitTests", "tests\Narya.Sms.Core.UnitTests\Narya.Sms.Core.UnitTests.csproj", "{7521779D-EBA6-4CDB-A829-EB1F4EB69912}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Narya.Sms.Twilio.UnitTests", "tests\Narya.Sms.Twilio.UnitTests\Narya.Sms.Twilio.UnitTests.csproj", "{BBF9C9A5-F44A-4A5F-8838-B8233A9FDC57}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -37,6 +39,10 @@ Global
 		{7521779D-EBA6-4CDB-A829-EB1F4EB69912}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7521779D-EBA6-4CDB-A829-EB1F4EB69912}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7521779D-EBA6-4CDB-A829-EB1F4EB69912}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBF9C9A5-F44A-4A5F-8838-B8233A9FDC57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBF9C9A5-F44A-4A5F-8838-B8233A9FDC57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBF9C9A5-F44A-4A5F-8838-B8233A9FDC57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBF9C9A5-F44A-4A5F-8838-B8233A9FDC57}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -46,6 +52,7 @@ Global
 		{E10A16E3-1E66-4551-9EE7-B25D927BEDF9} = {ACAD467F-7E52-4B18-93D1-9086C631166B}
 		{38040470-7902-47FC-A8FB-3BFAE45E6A31} = {ACAD467F-7E52-4B18-93D1-9086C631166B}
 		{7521779D-EBA6-4CDB-A829-EB1F4EB69912} = {1494BD64-637A-44D3-B616-A9A8A2E95A83}
+		{BBF9C9A5-F44A-4A5F-8838-B8233A9FDC57} = {1494BD64-637A-44D3-B616-A9A8A2E95A83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ABB30116-453F-4B2B-BCD2-BBF49E45CB22}

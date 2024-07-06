@@ -8,11 +8,11 @@
 
   <ItemGroup>
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.5" />
+    <PackageReference Include="Narya.Sms.Core" Version="1.0.0-beta" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Narya.Sms.Core\Narya.Sms.Core.csproj" />
     <ProjectReference Include="..\Narya.Sms.Twillio\Narya.Sms.Twilio.csproj" />
   </ItemGroup>
 

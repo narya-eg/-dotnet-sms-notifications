@@ -32,5 +32,5 @@ jobs:
         run: |
             cd core
             PACKAGE=$(find . -name "*.nupkg" | head -n 1)    
-            dotnet nuget push "$PACKAGE" -k NUGET_GENERAL_API_KEY -s https://api.nuget.org/v3/index.json
+            dotnet nuget push "$PACKAGE" -k $NUGET_GENERAL_API_KEY -s https://api.nuget.org/v3/index.json
       

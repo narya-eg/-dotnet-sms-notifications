@@ -28,12 +28,9 @@ jobs:
 
       - name: Publish NuGet package
         env:
-          NUGET_API_KEY: ${{ secrets.NUGET_PAT }}
+          NUGET_API_KEY: ${{ secrets.$NUGET_API_KEY }}
         run: |
-            ls
             cd core
-            ls
             PACKAGE=$(find . -name "*.nupkg" | head -n 1)   
-            echo "$PACKAGE"
             dotnet nuget push "$PACKAGE" -k $NUGET_API_KEY -s https://api.nuget.org/v3/index.json
       

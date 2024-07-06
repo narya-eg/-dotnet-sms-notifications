@@ -15,10 +15,10 @@ jobs:
         uses: actions/setup-dotnet@v3
 
       - name: Restore dependencies
-        run: dotnet restore ./src/Narya.Sms.Twilio/
+        run: dotnet restore ./
 
       - name: Build
-        run: dotnet build ./src/Narya.Sms.Twilio/ --no-restore --configuration Release
+        run: dotnet build ./ --no-restore --configuration Release
 
       - name: Test
         run: dotnet test ./tests/Narya.Sms.Twilio.UnitTests/ --no-restore --verbosity normal

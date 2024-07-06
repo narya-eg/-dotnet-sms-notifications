@@ -15,10 +15,10 @@ jobs:
         uses: actions/setup-dotnet@v3
 
       - name: Restore dependencies
-        run: dotnet restore ./src/Narya.Sms.Core/
+        run: dotnet restore ./
 
       - name: Build
-        run: dotnet build ./src/Narya.Sms.Core/ --no-restore --configuration Release
+        run: dotnet build ./ --no-restore --configuration Release
 
       - name: Test
         run: dotnet test ./tests/Narya.Sms.Core.UnitTests/ --no-restore --verbosity normal

@@ -13,7 +13,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narya.Sms.Twilio", "src\Nar
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TestSuite", "src\TestSuite\TestSuite.csproj", "{38040470-7902-47FC-A8FB-3BFAE45E6A31}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narya.Email.Core.UnitTests", "tests\Narya.Email.Core.UnitTests\Narya.Email.Core.UnitTests.csproj", "{D896D846-5ED9-4546-8DE8-ABDEB199FC25}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Narya.Sms.Core.UnitTests", "tests\Narya.Sms.Core.UnitTests\Narya.Sms.Core.UnitTests.csproj", "{7521779D-EBA6-4CDB-A829-EB1F4EB69912}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,10 +33,10 @@ Global
 		{38040470-7902-47FC-A8FB-3BFAE45E6A31}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{38040470-7902-47FC-A8FB-3BFAE45E6A31}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{38040470-7902-47FC-A8FB-3BFAE45E6A31}.Release|Any CPU.Build.0 = Release|Any CPU
-		{D896D846-5ED9-4546-8DE8-ABDEB199FC25}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{D896D846-5ED9-4546-8DE8-ABDEB199FC25}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{D896D846-5ED9-4546-8DE8-ABDEB199FC25}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{D896D846-5ED9-4546-8DE8-ABDEB199FC25}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7521779D-EBA6-4CDB-A829-EB1F4EB69912}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7521779D-EBA6-4CDB-A829-EB1F4EB69912}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7521779D-EBA6-4CDB-A829-EB1F4EB69912}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7521779D-EBA6-4CDB-A829-EB1F4EB69912}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -45,7 +45,7 @@ Global
 		{8F8A7B6F-5836-4F81-A0F7-0AEE1A3F987C} = {ACAD467F-7E52-4B18-93D1-9086C631166B}
 		{E10A16E3-1E66-4551-9EE7-B25D927BEDF9} = {ACAD467F-7E52-4B18-93D1-9086C631166B}
 		{38040470-7902-47FC-A8FB-3BFAE45E6A31} = {ACAD467F-7E52-4B18-93D1-9086C631166B}
-		{D896D846-5ED9-4546-8DE8-ABDEB199FC25} = {1494BD64-637A-44D3-B616-A9A8A2E95A83}
+		{7521779D-EBA6-4CDB-A829-EB1F4EB69912} = {1494BD64-637A-44D3-B616-A9A8A2E95A83}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {ABB30116-453F-4B2B-BCD2-BBF49E45CB22}
